@@ -1,4 +1,4 @@
-package com.afaqy.demo.network.example1;
+package com.afaqy.demo.network.socket.example1;
 
 import java.io.DataOutputStream;
 import java.net.Socket;

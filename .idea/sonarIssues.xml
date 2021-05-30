@@ -18,6 +18,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/afaqy/demo/network/datagram/DatagramReceiver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/afaqy/demo/network/datagram/DatagramSender.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/afaqy/demo/network/example1/ServerSocketTest.java">
           <value>
             <set />
@@ -34,6 +44,31 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/afaqy/demo/network/example2/SocketClientTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/afaqy/demo/network/socket/example2/ServerSocketTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/afaqy/demo/network/socket/example2/SocketClientTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/afaqy/demo/network/url/HttpURLConnectionDemo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/afaqy/demo/network/url/InetDemo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/afaqy/demo/network/url/URLTest.java">
           <value>
             <set />
           </value>

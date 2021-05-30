@@ -1,4 +1,4 @@
-package com.afaqy.demo.network.example2;
+package com.afaqy.demo.network.socket.example2;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
