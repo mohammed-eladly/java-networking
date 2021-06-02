@@ -1,4 +1,4 @@
-package com.afaqy.demo.network;
+package edu.demo.network;
 
 /**
  * Name : Main

@@ -1,4 +1,4 @@
-package com.afaqy.demo.network.url;
+package edu.demo.network.url;
 
 import java.net.InetAddress;
 

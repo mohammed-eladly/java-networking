@@ -1,14 +1,13 @@
-package com.afaqy.demo.network.socket.example2;
+package edu.demo.network.socket.example2;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
-import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * Name : ServerSocketTest
+ * Name : SocketClientTest
  * <p>
  * Description :
  * <p>
@@ -18,38 +17,32 @@ import java.net.Socket;
  * <p>
  * Mail : mohammed.eladly@afaqy.com
  */
-public class ServerSocketTest {
+public class SocketClientTest {
 
     public static void main(String[] args) {
         try {
-            ServerSocket serverSocket = new ServerSocket(9999);
-
-            Socket socket = serverSocket.accept();
+            Socket socket = new Socket("localhost", 9999);
 
             DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
-
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
-
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
             String str = "", str2 = "";
-
             while(!str.equals("stop")) {
+                str = bufferedReader.readLine();
 
-                str = dataInputStream.readUTF();
+                dataOutputStream.writeUTF(str);
 
-                System.out.println("client says: " + str);
-
-                str2 = bufferedReader.readLine();
-
-                dataOutputStream.writeUTF(str2);
                 dataOutputStream.flush();
+                str2 = dataInputStream.readUTF();
+
+                System.out.println("Server says: " + str2);
             }
             dataInputStream.close();
+            dataOutputStream.flush();
             dataOutputStream.close();
 
             socket.close();
-            serverSocket.close();
         } catch(Exception e) {
             e.printStackTrace();
         }

@@ -1,4 +1,4 @@
-package com.afaqy.demo.network.datagram;
+package edu.demo.network.datagram;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
